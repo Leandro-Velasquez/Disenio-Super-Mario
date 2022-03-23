@@ -6,19 +6,40 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-      <nav>
+  <header class="bg-gray-800 px-2 py-2">
+      <nav class="flex justify-between lg:justify-start">
           <div><img src="../img/logo.png" alt=""></div>
-          <div>
-              <ul>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Play Together</a></li>
-                  <li><a href="">Explore</a></li>
-                  <li><a href="">Bowser Fury</a></li>
-                  <li><a href="">Buy Now</a></li>
+          <div class="lg:flex lg:justify-center lg:items-center lg:w-full hidden">
+              <ul class="flex">
+                  <li class=""><a href="" class="link">Home</a></li>
+                  <li class=""><a href="" class="link">Play Together</a></li>
+                  <li class=""><a href="" class="link">Explore</a></li>
+                  <li class=""><a href="" class="link border-2 border-yellow-500 rounded-full mr-3">Bowser Fury</a></li>
+                  <li class=""><a href="" class="link border-2 border-red-600 rounded-full bg-red-600">Buy Now</a></li>
               </ul>
+          </div>
+
+
+          <div class="flex items-center lg:hidden">
+            <button class="btn-menu"><svg class="w-7 h-7 text-white hover:text-gray-400 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            <ul class="menu-movil bg-gray-800 w-full absolute left-0 top-24 hidden py-2">
+                <li class="text-center mb-2"><a href="" class="link">Home</a></li>
+                <li class="text-center mb-2"><a href="" class="link">Play Together</a></li>
+                <li class="text-center mb-2"><a href="" class="link">Explore</a></li>
+                <li class="text-center"><a href="" class="link border-2 border-yellow-500 rounded-full mb-2">Bowser Fury</a></li>
+                <li class="text-center"><a href="" class="link border-2 border-red-600 rounded-full bg-red-600">Buy Now</a></li>
+            </ul>
           </div>
       </nav>
   </header>
+
+
+  <script>
+      const btnMenu = document.querySelector('.btn-menu');
+      const menuMovil = document.querySelector('.menu-movil');
+      btnMenu.addEventListener('click', () => {
+          menuMovil.classList.toggle('hidden');
+      });
+  </script>
 </body>
 </html>

@@ -589,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -667,6 +671,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .rounded-full {
@@ -913,6 +925,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pt-72 {
   padding-top: 18rem;
 }
@@ -972,6 +989,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .link {
@@ -1036,6 +1057,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-red-500:hover {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.hover\:outline:hover {
+  outline-style: solid;
+}
+
+.hover\:outline-4:hover {
+  outline-width: 4px;
+}
+
+.hover\:outline-gray-500:hover {
+  outline-color: #6b7280;
+}
+
+.hover\:outline-green-500:hover {
+  outline-color: #22c55e;
 }
 
 @media (min-width: 640px) {

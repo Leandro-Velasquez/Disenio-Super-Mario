@@ -8,7 +8,8 @@ module.exports = {
         'pattern-characters-red': "url('../../img/pattern-characters-red.png')",
         'character-mario': "url('../../img/character-l.png')",
         'wave-pink': "url('../../img/wave-pink.png')",
-        'yellow-dots': "url('../../img/pattern-yellow-dots.png')"
+        'yellow-dots': "url('../../img/pattern-yellow-dots.png')",
+        'img-activity': "url('../../img/activity_img3.png')"
       }
     },
   },
